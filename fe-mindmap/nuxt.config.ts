@@ -25,11 +25,13 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/node_modules/vue-mindmap/dist/vue-mindmap.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/node_modules/vue-mindmap',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -45,7 +47,8 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    
   ],
   /*
   ** Axios module configuration
