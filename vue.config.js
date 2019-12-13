@@ -4,5 +4,9 @@ module.exports = {
   css: {
     sourceMap: true
   },
-  outputDir: "docs"
+  outputDir: "docs",
+  publicPath:
+    process.env.NODE_ENV === "production"
+      ? "https://mkoeppen.github.io/fe-mindmap/"
+      : "/"
 };
